@@ -1,0 +1,61 @@
+.container
+    max-width: 1250px
+    margin: 0 auto
+
+.title
+    font-family: Roboto-Bold
+    font-size: 20px
+    // color: white
+    padding: 12px 18px
+    text-align: center
+    color: white
+    width: 652px
+    margin: 0 auto 48px auto
+    background-color: $main-color
+    clip-path: polygon(0 0, 97% 0, 100% 100%, 3% 100%)
+
+.note
+    &__descr
+        display: flex
+        margin: 35px auto 0 auto
+        text-align: center
+        font-size: 15px
+        text-transform: uppercase
+        position: relative
+        justify-content: center
+    &__bold-text
+        font-family: Roboto-Bold
+        color: $main-color
+        display: inline-block
+        margin-left: 33px
+        line-height: 39px
+    &__text
+        color: black
+        font-family: Roboto-Regular
+
+section
+    scroll-margin-top: 90px
+    padding-top: 68px
+
+.types
+    padding-top: 30px
+
+
+.block
+    display: flex
+    margin-bottom: 47px
+    &:last-child
+        margin-bottom: 0
+    &-text
+        font-family: Roboto-Regular
+        font-size: 16px
+        color: black
+        line-height: 56px
+        margin-left: 52px
+    
+.block-text.line-height-default
+    padding-top: 10px
+    line-height: 20px
+
+.burger-btn
+    display: none

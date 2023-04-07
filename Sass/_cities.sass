@@ -1,0 +1,40 @@
+.cities
+    &__columns
+        // display: inline-block
+        margin: 0 auto
+        text-align: center
+        width: 100%
+    &__column 
+        display: inline-block
+        margin-right: 202px
+        &:last-child
+            margin-right: 0
+    &__name
+        display: flex
+        position: relative
+        margin-bottom: 19px
+        &:last-child
+            margin-bottom: 0
+    &__ellipse
+        width: 6px
+        height: 6px
+        position: absolute
+        background: $main-color
+        border-radius: 100%
+        top: 50%
+        transform: translateY(-50%)
+        &::before
+            display: block
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            content: ''
+            border-radius: 100%
+            border: 10px solid rgba(38, 89, 207, 0.56)
+    &__name-text
+        font-family: Roboto-Regular
+        font-size: 17px
+        color: black
+        margin-left: 21px
+        position: relative

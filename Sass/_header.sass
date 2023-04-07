@@ -1,0 +1,47 @@
+.header
+    // background-color: $main-color
+    // transition: all 1s easy
+    left: 0
+    top: -100px
+    width: 100%
+    border-bottom: 1px solid white
+    &__content
+        display: flex
+        justify-content: space-around
+        padding: 17px 0
+        position: relative
+    &__menu
+        padding: 17px 0
+        // display: flex
+        list-style-type: none
+
+    &__list
+        display: inline
+        margin-right: 59px
+        // position: relative
+        &:last-child
+            margin-right: 0 
+    &__link, &__link:visited
+        text-decoration: none
+        text-transform: uppercase
+        font-family: Roboto-Bold
+        color: white
+        padding: 13px 20px
+        letter-spacing: 0.105em
+        &:hover
+            color: $main-color
+            background-color: #fff
+            transition: background-color .6s, color .6s
+            clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%)
+
+
+    
+.fixed
+    position: fixed
+    top: 0
+    left: 0
+    // transform: translateY(100px)
+    // transition: transform 1s easy
+    background-color: $main-color
+    border: none
+    z-index: 10

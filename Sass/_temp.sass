@@ -1,0 +1,40 @@
+.temp
+    display: none
+    // opacity: 0
+    &__bg
+        z-index: 15
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgb(92, 92, 92, .5)
+    &__content
+        z-index: 16
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #fff
+        padding: 60px 57px
+        font-family: Roboto-Regular
+        color: #364364
+        font-size: 20px
+    &__descr
+        max-width: 551px
+        text-align: center
+        margin-bottom: 33px
+    &__btn
+        padding: 20px 142px
+        margin: 0 auto
+        text-align: center
+        background-color: #3759a9
+        color: white
+        &:hover
+            background-color: #3759a9e7
+            cursor: pointer
+            transition: background-color .5s easy
+    &__icon
+        text-align: center
+        margin-bottom: 39px
+        fill: #3759a9
