@@ -443,46 +443,16 @@ section {
   color: #2659CF;
   padding: 0;
 }
-.services table, .services tr, .services td {
-  text-align: center;
-  margin: 0 auto;
-  border: 1px solid black;
-}
-.services table {
-  width: 996px;
-  background-color: #2659CF;
-}
-.services th {
-  color: white;
-  font-family: Roboto-Thin;
-  font-size: 18px;
-  padding: 16px auto;
-}
-.services__table-point {
-  background-color: #fff;
-  color: black;
+.services__list {
+  margin-left: 50%;
+  transform: translateX(-50%);
   font-family: Roboto-Regular;
-  font-size: 17px;
 }
-.services__descr {
-  display: flex;
-  margin: 35px auto 0 auto;
-  text-align: center;
-  font-size: 15px;
-  text-transform: uppercase;
-  position: relative;
-  justify-content: center;
-}
-.services__bold-text {
-  font-family: Roboto-Bold;
+.services__name {
   color: #2659CF;
-  display: inline-block;
-  margin-left: 33px;
-  line-height: 39px;
 }
 .services__text {
   color: black;
-  font-family: Roboto-Regular;
 }
 
 .advantages__content {
