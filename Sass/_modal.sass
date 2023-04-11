@@ -1,0 +1,113 @@
+.modal
+    display: none
+    // opacity: 0
+    &__bg
+        z-index: 15
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgb(92, 92, 92, .5)
+    &__content
+        z-index: 16
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        background-color: #f3f3f3
+        padding: 50px 57px
+        font-family: Roboto-Regular
+        color: #364364
+        font-size: 20px
+    &__close
+        position: fixed
+        right: -40px
+        top: -15px
+        cursor: pointer
+        font-size: 44px
+        color: white
+        // background-color: #fff
+        z-index: 99
+        // width: 30px
+        // height: 30px
+    &__title
+        text-align: center
+        margin-bottom: 54px
+        width: 300px
+        margin: 0 auto 64px auto
+        padding: 10px
+        font-family: Roboto-Medium
+        // text-transform: uppercase
+        font-size: 20px
+        font-family: Roboto-Bold
+        color: white
+        background-color: #3759a9
+        clip-path: polygon(0 0, 97% 0, 100% 100%, 3% 100%)
+    &__input, &__input:focus, &__input:active
+        display: block
+        border: none
+        outline: none
+    &__form
+        margin-bottom: 30px
+        position: relative
+    &__input
+        font-size: 20px
+        padding-left: 30px
+        width: 100%
+
+        padding: 20px
+        &:last-child
+            margin-bottom: 0
+    input
+        padding-left: 80px
+        border-bottom: 1px solid $main-color
+        &:focus
+            border-bottom: 1px solid $main-color
+    &__checkbox
+        position: absolute
+        z-index: -1
+        opacity: 0
+
+    &__user-agreement-link, &__user-agreement-link:visited
+        color: rgb(54,67,100) 
+        text-decoration: none
+        padding-bottom: 2.5px
+        border-bottom: 1px solid #3759a9
+        color: #3759a9
+        // padding-bottom: 10px
+        &:hover
+            color: #3759a9c5
+    &__btn
+        border: none
+        padding: 20px 142px
+        margin: 0 auto
+        text-align: center
+        background-color: #3759a9
+        color: white
+        font-size: 19px
+        margin-top: 20px
+        width: 100%
+        // text-transform: uppercase
+        &:hover
+            background-color: #3759a9e7
+            cursor: pointer
+            transition: background-color .5s easy
+    &__icon
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        // left: 10px
+        border-right: 1px solid $main-color
+        // border-left: 1px solid $main-color
+        // border-top: 1px solid $main-color
+        padding: 13px 17px
+        &-svg
+            margin-top: 5px
+            width: 27px
+            height: 27px
+    &__user-agreement
+        margin-top: 50px
+        max-width: 500px
+        text-align: center
+        font-size: 15px
